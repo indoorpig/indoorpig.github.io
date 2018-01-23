@@ -1,0 +1,123 @@
+body {
+  height: 14000px;
+  font-style: normal;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.name {
+  position: fixed;
+  display: block;
+  font-size: : 16px;
+  font-weight: bold;
+}
+
+.name ul {
+  font-size: 2em;
+}
+
+.cards {
+  margin: 0 auto;
+  height: auto;
+}
+
+.title {
+  position: fixed;
+  display: inline-block;
+  font-size: : 2em;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+
+#test {
+  position: fixed;
+  font-size: : 2em;
+  font-weight: bold;
+}
+
+#card-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+#card-container-FIXED {
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: auto;
+  /*margin-bottom: 200px;*/
+}
+
+/*#project1-fixed, #project2-fixed, #project3-fixed, #project4-fixed, #project5-fixed {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}*/
+
+.project-card-FIXED {
+  position: fixed;
+  overflow: hidden;
+  margin: 0 auto;
+  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 63%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+.project-card img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.project-card-FIXED img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text ul {
+  font-size: 2em;
+  font-weight: bold;
+  opacity: 0;
+}

@@ -1,0 +1,122 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.name {
+  position: fixed;
+  display: block;
+  height: 4.5em;
+  width: 100%;
+}
+
+ul {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.name ul {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.screen {
+  margin: 0 auto;
+  height: auto;
+}
+
+#firstSection, #secondSection, #thirdSection {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#firstSection {
+  margin-top:0;
+}
+
+#firstSection h1, #secondSection h1, #thirdSection h1 {
+  text-align: center;
+  padding: 2em;
+  font-size: 6em;
+  color: white;
+  overflow: hidden;
+}
+
+.summary {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 60%;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.description {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  font-size: 1.5em;
+  width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+}
+
+.gallery img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.image-insert {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.image-insert img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.bottom {
+  display: table;
+  margin: 0 auto;
+  margin-top: 8em;
+  margin-bottom: 4em;
+}
+.bottom ul {
+  display: inline;
+  margin: auto;
+}
