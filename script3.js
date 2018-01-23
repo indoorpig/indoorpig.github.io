@@ -1,3 +1,5 @@
+window.location.reload(true);
+
 // Refresh at top
 window.onbeforeunload = function() {
   window.scrollTo(0, 0);
