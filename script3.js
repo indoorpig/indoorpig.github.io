@@ -1,3 +1,36 @@
+// Pre-page load
+var loader = document.querySelector(".loader");
+var content = document.querySelector(".screen");
+content.style.display = "none";
+
+// Loader
+window.onload = function() {
+
+  content.style.display = "block";
+  loader.style.display = "none";
+
+  // Recalculate Margins
+  project = document.querySelector("#project1").getBoundingClientRect();
+  projectHeight = project.height;
+  viewHeight = window.innerHeight;
+  viewWidth = window.innerWidth;
+  marginHeight = (viewHeight - projectHeight) / 2;
+
+  // Recalculating Margins
+  projectCards = document.querySelectorAll(".project-card");
+  for (i = 0; i < 5; i++) {
+    projectCards.item(i).style.marginTop = marginHeight + "px";
+    projectCards.item(i).style.marginBottom = marginHeight + "px";
+  }
+  aboutText.style.marginTop = marginHeight + "px";
+  aboutText.style.marginBottom = marginHeight + "px";
+
+  // Recalculating fixing height thresholds according to new size
+  fixThresh = (marginHeight + projectHeight);
+
+
+}
+
 // Refresh at top
 window.onbeforeunload = function() {
   window.scrollTo(0, 0);
@@ -59,7 +92,6 @@ window.addEventListener("resize", function(event) {
   }
   aboutText.style.marginTop = marginHeight + "px";
   aboutText.style.marginBottom = marginHeight + "px";
-
 
   // Recalculating fixing height thresholds according to new size
   fixThresh = (marginHeight + projectHeight);
@@ -212,28 +244,45 @@ window.addEventListener("scroll", function(event) {
   var textTwo = document.querySelector("#text2");
   var textThree = document.querySelector("#text3");
   var textFour = document.querySelector("#text4");
-    var textFive = document.querySelector("#text5");
-  console.log(textOne.style.opacity);
+  var textFive = document.querySelector("#text5");
 
   // Fifth Fix Halfway - Text Fade
+  // if (scrollHeight < fixThresh5 + marginHeight) {
+  //   textOne.style.opacity = 0;
+  //   textTwo.style.opacity = 0;
+  //   textThree.style.opacity = 0;
+  //   textFour.style.opacity = 0;
+  //   textFive.style.opacity = 0;
+  // }
+
   if (scrollHeight > fixThresh5 + marginHeight) {
     textOne.style.opacity = (scrollHeight - sixthEnter + marginHeight) / (scrollHeight - sixthEnter + marginHeight + halfUnfix) * 2;
+  } else {
+    textOne.style.opacity = 0;
   }
 
   if (scrollHeight > fixThresh5 + marginHeight + aboutTextScrollDist) {
     textTwo.style.opacity = (scrollHeight - sixthEnter + marginHeight - aboutTextScrollDist) / (scrollHeight - sixthEnter + marginHeight + halfUnfix - aboutTextScrollDist) * 2;
+  } else {
+    textTwo.style.opacity = 0;
   }
 
   if (scrollHeight > fixThresh5 + marginHeight + aboutTextScrollDist * 2) {
     textThree.style.opacity = (scrollHeight - sixthEnter + marginHeight - aboutTextScrollDist * 2) / (scrollHeight - sixthEnter + marginHeight + halfUnfix - aboutTextScrollDist * 2) * 2;
+  } else {
+    textThree.style.opacity = 0;
   }
 
   if (scrollHeight > fixThresh5 + marginHeight + aboutTextScrollDist * 3) {
     textFour.style.opacity = (scrollHeight - sixthEnter + marginHeight - aboutTextScrollDist * 3) / (scrollHeight - sixthEnter + marginHeight + halfUnfix - aboutTextScrollDist * 3) * 2;
+  } else {
+    textFour.style.opacity = 0;
   }
 
   if (scrollHeight > fixThresh5 + marginHeight + aboutTextScrollDist * 4) {
     textFive.style.opacity = (scrollHeight - sixthEnter + marginHeight - aboutTextScrollDist * 4) / (scrollHeight - sixthEnter + marginHeight + halfUnfix - aboutTextScrollDist * 4) * 2;
+  } else {
+    textFive.style.opacity = 0;
   }
 
 });
