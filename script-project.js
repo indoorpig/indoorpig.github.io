@@ -34,6 +34,13 @@ window.addEventListener("scroll", function() {
   // Name fade
   document.querySelector(".name").style.opacity = firstImageHeight / 600 - scrollHeight / 200;
 
+  // Removes name element
+  if (scrollHeight > firstImageHeight / 3) {
+    document.querySelector(".name").style.display = "none";
+  } else {
+    document.querySelector(".name").style.display = "block";
+  }
+
 });
 
 window.addEventListener("resize", function() {

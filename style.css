@@ -68,19 +68,8 @@ a {
   transform: translate(-50%, 0%);
   width: 100%;
   height: auto;
-  /*margin-bottom: 200px;*/
 }
 
-/*#project1-fixed, #project2-fixed, #project3-fixed, #project4-fixed, #project5-fixed {
-  position: fixed;
-  overflow: hidden;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  margin-bottom: 10%;
-}*/
 
 .project-card-FIXED {
   position: fixed;

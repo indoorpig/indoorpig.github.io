@@ -1,5 +1,5 @@
 // Pre-page load
-var loader = document.querySelector(".loader");
+// var loader = document.querySelector(".loader");
 var content = document.querySelector(".screen");
 content.style.display = "none";
 
@@ -7,16 +7,15 @@ content.style.display = "none";
 window.onload = function() {
 
   content.style.display = "block";
-  loader.style.display = "none";
+  // loader.style.display = "none";
 
-  // Recalculate Margins
+  // Recalculate Margins - Resets view every time
   project = document.querySelector("#project1").getBoundingClientRect();
   projectHeight = project.height;
   viewHeight = window.innerHeight;
   viewWidth = window.innerWidth;
   marginHeight = (viewHeight - projectHeight) / 2;
 
-  // Recalculating Margins
   projectCards = document.querySelectorAll(".project-card");
   for (i = 0; i < 5; i++) {
     projectCards.item(i).style.marginTop = marginHeight + "px";
@@ -28,7 +27,11 @@ window.onload = function() {
   // Recalculating fixing height thresholds according to new size
   fixThresh = (marginHeight + projectHeight);
 
-
+  // Rescaling text
+  var textSizes = document.querySelectorAll(".text ul");
+  for (i = 0; i < 5; i++) {
+    textSizes.item(i).style.fontSize = parseInt(viewWidth / 60) + "px";
+  }
 }
 
 // Refresh at top
@@ -95,6 +98,32 @@ window.addEventListener("resize", function(event) {
 
   // Recalculating fixing height thresholds according to new size
   fixThresh = (marginHeight + projectHeight);
+
+  // Rescaling text
+  var textSizes = document.querySelectorAll(".text ul");
+
+  // if (viewWidth < 641) {
+  //   for (i = 0; i < 5; i++) {
+  //     textSizes.item(i).style.fontSize = "1em";
+  //   }
+  // } else if (viewWidth < 1281) {
+  //   for (i = 0; i < 5; i++) {
+  //     textSizes.item(i).style.fontSize = "1.5em";
+  //   }
+  // } else {
+  //   for (i = 0; i < 5; i++) {
+  //     textSizes.item(i).style.fontSize = "2em";
+  //   }
+  // }
+
+  console.log(viewWidth);
+  if (viewWidth < 1101) {
+    textSizes.item(i).style.fontSize = "18px";
+  } else {
+    for (i = 0; i < 5; i++) {
+      textSizes.item(i).style.fontSize = parseInt(viewWidth / 60) + "px";
+    }
+  }
 
 });
 
