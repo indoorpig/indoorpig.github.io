@@ -1,87 +1,84 @@
 <!DOCTYPE html>
-<html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-  <title>chris chen</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Demo: Cantina Negrar preloader deconstruction</title>
+	<meta name="description" content="Learn how to recreate the preloader from Cantina Negrar. Tutorial for a passionate front-end web developers by Petr Tichy.">
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<style type="text/css">
+	.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	h1 {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 32px;
+		margin-bottom: 3px;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 100px;
+	}
+	</style>
 </head>
+<body class="demo">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-<body>
-  <div class="screen">
+	<!-- Demo content -->			
+	<div id="demo-content">
 
-    <div class="name">
-      <a href="http://christopherchen.cc/">
-        <ul>chris chen</ul>
-      </a>
-    </div>
+		<header class="entry-header">
 
-    <div class="title">data visualization</div>
+			<nav class="back-link">
+				<span class="nav-previous"><a href="http://ihatetomatoes.net/create-css3-spinning-preloader/" rel="prev"><span class="meta-nav">&larr;</span> Back to tutorial</a></span>
+			</nav><!-- .nav-single -->
 
-    <div class="loader">
-      <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
-    <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-      <animateTransform
-         attributeName="transform"
-         attributeType="XML"
-         type="rotate"
-         dur="1s"
-         from="0 50 50"
-         to="360 50 50"
-         repeatCount="indefinite" />
-  </path>
-</svg>
-    </div>
+			<h1 class="entry-title">Demo: Cantina Negrar CSS3 preloader deconstruction</h1>
+		</header>
 
-    <div class="cards">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
 
-      <div id="card-container">
-        <div class=project-card>
-          <div id="project1">
-            <a href="project1.html"><img src="./images/data/data1.png"></a>
-          </div>
-        </div>
+	</div>
+	<!-- /Demo content -->
 
-        <div class=project-card>
-          <div id="project2">
-            <a href="project2.html"><img src="./images/inspection/inspection3.png"></a>
-          </div>
-        </div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
 
-        <div class=project-card>
-          <div id="project3">
-            <a href="project3.html"><img src="./images/skymouse/skymouse4.jpg"></a>
-          </div>
-        </div>
-
-        <div class=project-card>
-          <div id="project4">
-            <a href="project4.html"><img src="./images/globe/globe14.png"></a>
-          </div>
-        </div>
-
-        <div class=project-card>
-          <div id="project5">
-            <a href="project5.html"><img src="./images/anim/Anim2.jpg"></a>
-          </div>
-        </div>
-
-        <div class="text">
-          <ul id="text1">hi</ul>
-          <ul id="text2">i’m chris.</ul>
-          <ul id="text3">i’m passionate about creating digital and physical experiences</ul>
-          <ul id="text4">...and in everything i make and do, it’s always about <i>communicating</i> and <i>connecting</i> with others.</ul>
-          <br>
-          <ul id="text5">let’s start a conversation.<br><br>chrischen@gatech.edu</ul>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-  <script src="script3.js"></script>
 </body>
-
 </html>
