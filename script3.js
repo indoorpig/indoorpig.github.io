@@ -1,4 +1,12 @@
 // Pre-page load
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   setTimeout(function() {
+//     document.querySelector("body").classList.add('loaded');
+//     document.querySelector("h1").style.color = '#222222';
+//   }, 1000);
+// });
+
 // var loader = document.querySelector(".loader");
 var content = document.querySelector(".screen");
 content.style.display = "none";
