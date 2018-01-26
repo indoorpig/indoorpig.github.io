@@ -1,21 +1,19 @@
 // Pre-page load
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   setTimeout(function() {
-//     document.querySelector("body").classList.add('loaded');
-//     document.querySelector("h1").style.color = '#222222';
-//   }, 1000);
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.querySelector("body").classList.add('loaded');
+    document.querySelector("h1").style.color = '#222222';
+  }, 1000);
+});
 
-// var loader = document.querySelector(".loader");
 var content = document.querySelector(".screen");
-content.style.display = "none";
+// content.style.display = "none";
 
 // Loader
 window.onload = function() {
 
-  content.style.display = "block";
-  // loader.style.display = "none";
+  // content.style.display = "block";
 
   // Recalculate Margins - Resets view every time
   project = document.querySelector("#project1").getBoundingClientRect();
