@@ -1,19 +1,14 @@
-// Pre-page load
-
+// Loader
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
-    document.querySelector("body").classList.add('loaded');
-    document.querySelector("h1").style.color = '#222222';
-  }, 1000);
+    document.querySelector(".screen").classList.add('loaded');
+  }, 500);
 });
 
 var content = document.querySelector(".screen");
-// content.style.display = "none";
 
-// Loader
 window.onload = function() {
 
-  // content.style.display = "block";
 
   // Recalculate Margins - Resets view every time
   project = document.querySelector("#project1").getBoundingClientRect();
@@ -42,7 +37,7 @@ window.onload = function() {
 
 // Refresh at top
 window.onbeforeunload = function() {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 };
 
 let scrollHeight = 0;
@@ -108,20 +103,6 @@ window.addEventListener("resize", function(event) {
   // Rescaling text
   var textSizes = document.querySelectorAll(".text ul");
 
-  // if (viewWidth < 641) {
-  //   for (i = 0; i < 5; i++) {
-  //     textSizes.item(i).style.fontSize = "1em";
-  //   }
-  // } else if (viewWidth < 1281) {
-  //   for (i = 0; i < 5; i++) {
-  //     textSizes.item(i).style.fontSize = "1.5em";
-  //   }
-  // } else {
-  //   for (i = 0; i < 5; i++) {
-  //     textSizes.item(i).style.fontSize = "2em";
-  //   }
-  // }
-
   console.log(viewWidth);
   if (viewWidth < 1101) {
     textSizes.item(i).style.fontSize = "18px";
@@ -137,7 +118,6 @@ window.addEventListener("scroll", function(event) {
 
   // Recalculate scrollHeight
   scrollHeight = window.pageYOffset;
-  // console.log(scrollHeight);
 
   var fixThresh2 = fixThresh * 2 + unfixHeight;
   var fixThresh3 = fixThresh * 3 + unfixHeight * 2;
@@ -280,15 +260,6 @@ window.addEventListener("scroll", function(event) {
   var textThree = document.querySelector("#text3");
   var textFour = document.querySelector("#text4");
   var textFive = document.querySelector("#text5");
-
-  // Fifth Fix Halfway - Text Fade
-  // if (scrollHeight < fixThresh5 + marginHeight) {
-  //   textOne.style.opacity = 0;
-  //   textTwo.style.opacity = 0;
-  //   textThree.style.opacity = 0;
-  //   textFour.style.opacity = 0;
-  //   textFive.style.opacity = 0;
-  // }
 
   if (scrollHeight > fixThresh5 + marginHeight) {
     textOne.style.opacity = (scrollHeight - sixthEnter + marginHeight) / (scrollHeight - sixthEnter + marginHeight + halfUnfix) * 2;
