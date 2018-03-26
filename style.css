@@ -1,5 +1,5 @@
 body {
-  height: 14000px;
+  height: 15000px;
   font-style: normal;
   font-family: 'Sorts Mill Goudy', serif;
 }
@@ -44,9 +44,6 @@ svg {
         -webkit-transform: translateY(-100%);
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
-
-        /*-webkit-transition: all 0.3s 0.6s ease-out;
-                transition: all 0.3s 0.6s ease-out;*/
 }
 
 .name {
