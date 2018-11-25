@@ -2,112 +2,151 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116414326-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-116414326-1');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116414326-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116414326-1');
+  </script>
+
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-  <title>chris chen</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-  <div class="screen">
+  <div class=screen>
 
-    <div id="loader-wrapper">
-      <div class="loader"></div>
+    <div class=main>
 
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
-      <path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-        <animateTransform
-           attributeName="transform"
-           attributeType="XML"
-           type="rotate"
-           dur="1s"
-           from="0 50 50"
-           to="360 50 50"
-           repeatCount="indefinite" />
-    </path>
-  </svg>
+      <div class=column id=c1>
 
-    </div>
-
-    <div class="name">
-      <a href="http://christopherchen.cc/">
-        <ul>chris chen</ul>
-      </a>
-    </div>
-
-    <div class="title">strongbox</div>
-
-    <div class="cards">
-
-      <div id="card-container">
-        <div class=project-card>
-          <div id="project1">
-            <a href="project7.html"><img src="./images/strongbox/strong2.jpg"></a>
-          </div>
+        <div class=item>
+          <a href="catcall.html">
+            <div id=item1>
+              <img src="thumb1.jpg" />
+              <div class=overlay>
+                <div class="description">Catcall Control</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="pencil.html">
+            <div id=item2>
+              <img src="thumb4.jpg" />
+              <div class=overlay>
+                <div class="description">Apple Pencil Pro</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="data.html">
+            <div id=item3>
+              <img src="thumb7.jpg" />
+              <div class=overlay>
+                <div class="description">Data Visualization</div>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <div class=project-card>
-          <div id="project2">
-            <a href="project6.html"><img src="./images/cdc/cdc10.jpg"></a>
-          </div>
+      </div>
+
+      <div class=column id=c2>
+
+        <div class=item>
+          <a href="social.html">
+            <div id=item4>
+              <img src="thumb2.png" />
+              <div class=overlay>
+                <div class="description">Social</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="strong.html">
+            <div id=item5>
+              <img src="thumb5.jpg" />
+              <div class=overlay>
+                <div class="description">Strongbox</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="inspect.html">
+            <div id=item6>
+              <img src="thumb8.jpg" />
+              <div class=overlay>
+                <div class="description">Inspection</div>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <div class=project-card>
-          <div id="project3">
-            <a href="project1.html"><img src="./images/data/data1.png"></a>
-          </div>
+      </div>
+
+      <div class=column id=c3>
+
+        <div class=item>
+          <a href="animal.html">
+            <div id=item7>
+              <img src="thumb3.jpg" />
+              <div class=overlay>
+                <div class="description">Animal&You</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="kop.html">
+            <div id=item8>
+              <img src="thumb6.jpg" />
+              <div class=overlay>
+                <div class="description">King of Pops Service Design</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class=item>
+          <a href="skymouse.html">
+            <div id=item9>
+              <img src="thumb9.jpg" />
+              <div class=overlay>
+                <div class="description">Skymouse</div>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <div class=project-card>
-          <div id="project4">
-            <a href="project2.html"><img src="./images/inspection/inspection3.png"></a>
-          </div>
-        </div>
-
-        <div class=project-card>
-          <div id="project5">
-            <a href="project3.html"><img src="./images/skymouse/skymouse4.jpg"></a>
-          </div>
-        </div>
-
-        <div class=project-card>
-          <div id="project6">
-            <a href="project4.html"><img src="./images/globe/globe14.png"></a>
-          </div>
-        </div>
-
-        <div class=project-card>
-          <div id="project7">
-            <a href="project5.html"><img src="./images/anim/Anim2.jpg"></a>
-          </div>
-        </div>
-
-        <div class="text">
-          <ul id="text1">hi</ul>
-          <ul id="text2">i’m chris.</ul>
-          <ul id="text3">i’m passionate about creating digital and physical experiences</ul>
-          <ul id="text4">...and in everything i make and do, it’s always about <i>communicating</i> and <i>connecting</i> with others.</ul>
-          <br>
-          <ul id="text5">let’s start a conversation.<br><br>chrischen@gatech.edu</ul>
-        </div>
       </div>
 
     </div>
 
+    <div class=title>
+      <a href="http://christopherchen.cc/">chris chen</a>
+    </div>
+
+    <div class=nav>
+      <a href="resume.pdf">
+        <ul>resume</ul>
+      </a>
+      <a href="about.html">
+        <ul>about</ul>
+      </a>
+    </div>
   </div>
-  <script src="script.js"></script>
+
 </body>
 
 </html>
