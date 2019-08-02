@@ -4528,6 +4528,7 @@ a.single-image {
 }
 .contact-p .contact-info .desc {
   position: relative;
+  color: #999999;
 }
 .contact-p .contact-info .desc ul li {
   font-weight: 600;
@@ -4546,6 +4547,15 @@ a.single-image {
   font-weight: 400;
   margin-bottom: 10px;
 }
+
+.contact-p .contact-info .info-inf .in-box p {
+  color: #fbb100;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #999999
+}
+
 .contact-p .contact-info .mail-dtls {
   position: relative;
   margin-top: 30px;
