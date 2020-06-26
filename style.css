@@ -1784,3 +1784,7 @@ li.social-footer a:first-child {
     padding-top: 30px;
   }
 }
+
+.reveal-more {
+  display: none;
+}
