@@ -42,11 +42,11 @@ body a:hover {
 }
 
 .site-wrapper ::selection {
-  background-color: #fffaa3;
+  background-color: #ecc978;
 }
 
 .site-wrapper ::-moz-selection {
-  background-color: #fffaa3;
+  background-color: #ecc978;
 }
 
 .doc-loader {
@@ -84,7 +84,7 @@ body a:hover {
   display: block;
   width: 106%;
   height: 10px;
-  background-color: #fffaa3;
+  background-color: #ecc978;
   position: absolute;
   left: -3%;
   bottom: 6px;
@@ -297,11 +297,11 @@ body a:hover {
 .sm-clean a:hover,
 .main-menu.sm-clean .sub-menu li a.current,
 .main-menu.sm-clean .sub-menu li a:hover {
-  color: #fffaa3;
+  color: #ecc978;
 }
 
 .sm-clean a span.sub-arrow {
-  color: #fffaa3;
+  color: #ecc978;
   font-size: 18px !important;
   right: -50px;
   padding: 5px;
@@ -451,7 +451,7 @@ body a:hover {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #fffaa3;
+  background-color: #ecc978;
   position: absolute;
   bottom: 6px;
   left: -2px;
@@ -507,7 +507,7 @@ body a:hover {
 }
 
 .read-more-arrow a:hover {
-  color: #fffaa3;
+  color: #ecc978;
 }
 
 .read-more-arrow a span {
@@ -609,14 +609,28 @@ body a:hover {
   font-size: calc(6px + (6) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((6px + (6) * ((100vw - 300px) / (1600 - 300))) * 1.5);
   font-weight: 400;
-  /* background-color: #000; */
   color: #000;
   margin: 0 auto;
   padding-top: 0;
   text-align: left;
   letter-spacing: 5px;
   text-transform: uppercase;
-  border-bottom: 5px solid #fffaa3;
+  border-bottom: 5px solid #ecc978;
+  display: inline;
+}
+
+.page p.entry-title-p2,
+.blog p.entry-title-p2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: calc(6px + (6) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc((6px + (6) * ((100vw - 300px) / (1600 - 300))) * 1.5);
+  font-weight: 400;
+  color: #000;
+  margin: 0 auto;
+  padding-top: 0;
+  text-align: left;
+  letter-spacing: 5px;
+  text-transform: uppercase;
   display: inline;
 }
 
@@ -672,7 +686,7 @@ body a:hover {
   display: block;
   width: 106%;
   height: 5px;
-  background-color: #fffaa3;
+  background-color: #ecc978;
   position: absolute;
   left: -3%;
   bottom: 5px;
@@ -777,7 +791,7 @@ body a:hover {
   display: block;
   width: 106%;
   height: 5px;
-  background-color: #fffaa3;
+  background-color: #ecc978;
   position: absolute;
   left: -3%;
   bottom: 6px;
@@ -976,7 +990,7 @@ body a:hover {
   );
   color: #000;
   font-weight: 700;
-  border-bottom: 5px solid #fffaa3;
+  border-bottom: 5px solid #ecc978;
   display: inline;
 }
 
@@ -988,7 +1002,7 @@ body a:hover {
     (12px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) * 1.2
   );
   font-weight: 700;
-  border-bottom: 10px solid #fffaa3;
+  border-bottom: 10px solid #ecc978;
   display: inline;
 }
 
@@ -1001,7 +1015,7 @@ body a:hover {
     (12px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) * 1.2
   );
   color: #000;
-  border-bottom: 5px solid #fffaa3;
+  border-bottom: 5px solid #ecc978;
   display: inline;
 }
 
@@ -1011,7 +1025,7 @@ body a:hover {
   font-weight: 700;
   font-size: calc(12px + 6 * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((12px + 6 * ((100vw - 300px) / (1600 - 300))) * 1.2);
-  border-bottom: 5px solid #fffaa3;
+  border-bottom: 5px solid #ecc978;
   color: #000;
   display: inline;
 }
@@ -1025,7 +1039,7 @@ body a:hover {
     (36px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) * 1.2
   );
   color: #000;
-  border-bottom: 15px solid #fffaa3;
+  border-bottom: 15px solid #ecc978;
   display: inline;
 }
 
@@ -1064,6 +1078,10 @@ ol .grey {
 
 .story-break-1 {
   height: 1vh;
+}
+
+.story-break-3 {
+  height: 3vh;
 }
 
 .story-break-5 {
