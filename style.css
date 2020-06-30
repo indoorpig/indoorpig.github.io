@@ -225,7 +225,7 @@ body a:hover {
 
 .menu-wraper.show {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
   transition-delay: 0s;
 }
 
@@ -267,6 +267,10 @@ body a:hover {
   width: 100%;
   position: relative;
   z-index: 9999;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .main-menu ul {
@@ -290,7 +294,7 @@ body a:hover {
   padding: 5px 0;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .sm-clean a.current,
