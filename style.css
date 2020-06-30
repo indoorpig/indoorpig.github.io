@@ -431,7 +431,7 @@ body a:hover {
 
 .entry-info {
   font-size: calc(10px + 1 * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -477,10 +477,12 @@ body a:hover {
 }
 
 .blog-item-holder h2.entry-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   font-size: 35px;
   line-height: 44px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
   display: block;
 }
 
@@ -592,28 +594,30 @@ body a:hover {
 
 .page h1.entry-title,
 .blog h1.entry-title {
-  font-family: "Playfair Display", serif;
-  font-size: calc(24px + (24) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: calc(12px + (24) * ((100vw - 300px) / (1600 - 300)));
   line-height: 60px;
-  font-weight: 400;
+  font-weight: 200;
   color: #000;
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   text-align: left;
 }
 
 .page p.entry-title-p,
 .blog p.entry-title-p {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: calc(6px + (6) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(12px + (6) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((6px + (6) * ((100vw - 300px) / (1600 - 300))) * 1.5);
   font-weight: 400;
   color: #000;
   margin: 0 auto;
   padding-top: 0;
   text-align: left;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   border-bottom: 5px solid #ecc978;
   display: inline;
@@ -622,14 +626,14 @@ body a:hover {
 .page p.entry-title-p2,
 .blog p.entry-title-p2 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: calc(6px + (6) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(12px + (6) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((6px + (6) * ((100vw - 300px) / (1600 - 300))) * 1.5);
-  font-weight: 400;
+  font-weight: 200;
   color: #000;
   margin: 0 auto;
   padding-top: 0;
   text-align: left;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   display: inline;
 }
@@ -656,7 +660,7 @@ body a:hover {
 }
 
 .quote:before {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
   content: "\201C";
   font-size: 180px;
@@ -921,17 +925,19 @@ body a:hover {
 ====================================== */
 
 .single h1.entry-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   color: #000;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 48px;
+  line-height: 48px;
   margin-bottom: 10px;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 15px;
 }
 
 .single .entry-info {
@@ -1008,38 +1014,39 @@ body a:hover {
 
 .sect-title {
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(
     (12px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) * 1.2
   );
   color: #000;
   border-bottom: 5px solid #ecc978;
+  letter-spacing: 3px;
   display: inline;
 }
 
 .sub-title {
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   font-size: calc(12px + 6 * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((12px + 6 * ((100vw - 300px) / (1600 - 300))) * 1.2);
   border-bottom: 5px solid #ecc978;
+  letter-spacing: 3px;
   color: #000;
   display: inline;
 }
 
 .bf-title {
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: calc(36px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(
-    (36px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) * 1.2
-  );
+  font-size: calc(12px + (12) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc((12px + (12) * ((100vw - 300px) / (1600 - 300))) * 1.2);
   color: #000;
-  border-bottom: 15px solid #ecc978;
+  /* border-bottom: 5px solid #ecc978; */
+  letter-spacing: 2px;
   display: inline;
 }
 
@@ -1065,6 +1072,8 @@ body a:hover {
   font-size: calc(12px + 6 * ((100vw - 300px) / (1600 - 300)));
   line-height: calc((12px + 6 * ((100vw - 300px) / (1600 - 300))) * 2);
   color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   display: inline;
 }
 
@@ -1131,16 +1140,18 @@ ol .grey {
 }
 
 .nav-links p {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 11px;
 }
 
 .nav-previous a,
 .nav-next a {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   line-height: 28px;
 }
 
@@ -1410,12 +1421,20 @@ li.copyright-footer {
   float: left;
   text-align: left;
   width: 50%;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 3px;
 }
 
 li.social-footer {
   float: right;
   text-align: right;
   width: 50%;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 li.social-footer a {
